@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>🔄 Legendre Calculator</title>
+		<meta charset="utf-8"/>
+		<meta itemprop="image" content="Capture.JPG">
+		<link itemprop="image" href="Capture.JPG">
+		<meta name="description" content="The Ultimate Legendre Equation calculator. It evaluates the simplest form of the ideal solution to the Legendre equation.">
+		<meta name="keywords" content="Legendre, Legendre calculator, web calculator, Laplace equation">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script id="Mathjax-js" sync src="tex-chtml-full.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				
+					<div id="intro">
+						<h1>THE ULTIMATE LEGENDRE<br />
+						EQUATION CALCULATOR</h1>
+						<p>Introducing the simplest form of the ideal solution to the 
+							Legendre equation</p>
+						<ul class="actions">
+							<li><a href="#input" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="documentation.html" class="logo">
+							\((1-x^2)y''-2xy'+n(n+1)y=0
+							\)
+							<div id="left">\( where\ n=1,2,3,...\)</div>
+							\(y=C_1\ P_n(x)+ C_2\ Q_n(x)\)
+							<div id="left">\( where: \)</div>
+							<div>
+								\(P_n(x)=\frac {1} {2^n}\sum_{r=0}^\frac {n} {2} \frac {(-1)^r\ (2n-2r)!} {(n-r)!\ (n-2r)!\ r!}x^{n-2r}\)
+								<div>
+									\(Q_n(x)=[P_n(x)]\ tanh^{-1}(x) \ \ \ \ \ +\)
+								</div>
+								<div>
+									\(\frac {1} {2^n}\sum_{r=0}^\frac {n-1} {2} \ (-1)^{r+1}\)<span id="brac1">\(\sum_{k=0}^r \frac {(2n-2k)!\ (2k)!}{((n-k)!\ k!)^2}\)</span>\(\frac {(n-1-r)!\ r!}{(2r+1)!\ (n-1-2r)!}x^{n-1-2r}\)
+								</div>
+							</div>
+						</a>
+					</header>
+
+				
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="#header">Home</a></li>
+							<li><a href="documentation.html">Documentation</a></li>
+							<li><a href="about.html">Author</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/innocent-obasi-72ab6022a" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.facebook.com/obasi.chukwuma.77" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://wa.link/fjkcmd" target="_blank" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+						</ul>
+					</nav>
+
+				
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured" id="p1">
+								<header class="major">
+									<span class="date"> Smart calculator</span>
+									<h2><a href="#">\((1-x^2)y''-2xy'+n(n+1)y=0\)
+									</a>
+									</h2>
+
+									<p> The above equation represents the legendre equation, the solution presented by this calculator
+										consists of two terminating series \(P_n(x)\) and \(Q_n(x)\) as it fundamental solution; which makes it better than any other contemporary solution
+									</p>
+								</header>
+								
+								<h2><span class="beginne"> Select the value of</span><span class="smaller"> 'n'</span></h2>
+								<p style="text-align: center; color: red; font-size: 1.2em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; letter-spacing: 0.01cm; font-style: italic;">Note that <span style="font-weight: 500;">n</span> must be either zero or a positive integer</p>
+								<div class="inputs">
+									<input type="number" id="input" placeholder="Enter the value of n (1,2,3...)">
+									<br>
+									<button class="button" id="btn--select">Select</button>
+								</div>
+							</article>
+					</div>
+			</div>
+			<div id="copyright" style="margin-bottom: 5%; color:antiquewhite; text-align: center;">
+				<ul><li>&copy; 2023</li><li>Designer: <a href="https://obasitheanalyst.github.io/portfolio/">Innocent Obasi</a></li></ul>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/calc.js"></script>
+
+	</body>
+</html>

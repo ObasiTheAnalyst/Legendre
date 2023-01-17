@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title style="background-color: blue; font-size:larger;">🔄 The General Solution</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script type="text/javascript" src="jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="jquery-ui.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script id="Mathjax-js" sync src="tex-chtml-full.js"></script>
+		<script src="math.js"></script>
+		<script src="plotly-2.16.1.min.js"></script>
+		<script src="jspdf.min.js"></script>
+		<script src="html2pdf.bundle.min.js"></script>
+		<link rel="stylesheet" href="jquery-ui.css">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1 style="text-transform: none; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: italic;">Scroll down to view the general solution <br />
+						</h1>
+						<p>Introducing the simplest form of the ideal solution to the 
+							Legendre equation</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="#header" class="logo">
+							\((1-x^2)y''-2xy'+n(n+1)y=0
+							\)
+							<div id="left">\( where\ n=1,2,3,...\)</div>
+							\(y=C_1\ P_n(x)+ C_2\ Q_n(x)\)
+							<div id="left">\( where: \)</div>
+							<div>
+								\(P_n(x)=\frac {1} {2^n}\sum_{r=0}^\frac {n} {2} \frac {(-1)^r\ (2n-2r)!} {(n-r)!\ (n-2r)!\ r!}x^{n-2r}\)
+								<div>
+									\(Q_n(x)=[P_n(x)]\ tanh^{-1}(x) \ \ \ \ \ +\)
+								</div>
+								<div>
+									\(\frac {1} {2^n}\sum_{r=0}^\frac {n-1} {2} \ (-1)^{r+1}\)<span id="brac1">\(\sum_{k=0}^r \frac {(2n-2k)!\ (2k)!}{((n-k)!\ k!)^2}\)</span>\(\frac {(n-1-r)!\ r!}{(2r+1)!\ (n-1-2r)!}x^{n-1-2r}\)
+								</div>
+							</div>
+						</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="#header">Home</a></li>
+							<li><a href="documentation.html">Documentation</a></li>
+							<li><a href="about.html">Author</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/innocent-obasi-72ab6022a" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.facebook.com/obasi.chukwuma.77" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://wa.link/fjkcmd" target="_blank" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header>
+									<h3 style="text-transform:none; font-style:italic; font-family:Arial, Helvetica, sans-serif">The following have been made available in a short time by the calculator: </h3>
+									<ul class="list">
+										<li class="list"><a href="#over"> General Solution</a></li>
+										<li class="list"><a href="#pic1">legendre function of 1st kind, <span style="text-transform: none;">\(P_n(x)\)</span></a></li>
+										<li class="list"><a href="#pic2">legendre function of 2nd kind, <span style="text-transform: none;">\(Q_n(x)\)</span></a></li>
+										<li class="list"><a href="#p_graph">Graph of <span style="text-transform: none;">\(\ P_n(x)\)</span></a></li>
+										<li class="list"><a href="#q_graph">Graph of <span style="text-transform: none;">\(\ Q_n(x)\)</span></a></li>
+									</ul>
+                                    <div style="position:relative; right: -30%;">
+                                        <button class="button icon solid fa-download" id="download" style="background: rgb(8, 88, 238); font-size: 1.4em; text-transform: none;">Download pdf</button>
+                                    </div>	
+								</header>
+								<div style="margin:0%; margin-top: 5%; margin: bottom 5%; font-size: 1.4em; font-style: italic; font-weight: 450; max-width: 100%;" id="pdf">
+									<p>
+										<div style="font-weight: 650; display: flex;"> Inputed equation:</div>
+										<div style="text-align: center;" id="coeff"></div>
+										<div style="display: flex; font-weight: 650;"> The General solution:</div>
+										<div style="text-align: center;" id="coeff1"></div>
+										<div style="display:flex; font-weight: 650;"> Where:</div>
+										<div style="display: flexbox; text-align:left;">\(C_1\) and \(C_2\) are constants</div>
+									</p>
+									<p>
+										<div id="pic1">
+											<div class="we p">
+												<div style="font-weight: 900; font-size: larger;" id="pn"></div>
+												<div style="font-size: 1.5em;;" id="a"></div>
+												<div style="max-width: 60%;" id="p"></div>
+											</div>
+											<div id="p0">\(P_0(x)\ =\ 1\)</div>
+											<div id="p11">\(P_1(x)\ =\ x\)</div>
+										</div>
+										<div style="align-content: center; margin-top: 5%; margin-bottom: 7%;" id="p_graph"></div><br>
+									</p>
+									<p>
+										<div id="pic2">
+											<div class="we q">
+												<div style="font-weight: 900; font-size: larger;" id="qn"></div>
+												<div style="font-size: 1.5em;" id="a2"></div>
+												<div style="max-width: 50%;" id="p2"></div>
+												<div id="t">\(\ tanh^{-1}(x)\ -\ \)</div>
+												<div style="font-size: 1.3em;" id="q"></div>
+											</div>
+											<div id="q0">\(Q_0(x)\ =\ tanh^{-1}(x)\)</div>
+											<div id="q1">\(Q_1(x)\ =\ xtanh^{-1}(x)\ -\ 1\)</div>
+										</div>
+										<div style="align-content: center; margin-top: 5%" id="q_graph"></div>
+									</p>
+								</div>
+							</article>
+			</div>
+			<div id="copyright" style="margin-bottom: 5%; color:antiquewhite; text-align: center;">
+				<ul><li>&copy; 2023</li><li>Designer: <a href="https://obasitheanalyst.github.io/portfolio/">Innocent Obasi</a></li></ul>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/solution.js"></script>
+	</body>
+</html>

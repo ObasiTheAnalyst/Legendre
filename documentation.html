@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Documentation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script id="Mathjax-js" sync src="tex-chtml-full.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+					<header id="header"><h2 style="font-style:italic; font-family: Verdana, Geneva, Tahoma, sans-serif;">The Ideal solution to the legendre equation</h2> 
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="documentation.html">Documentation</a></li>
+                            <li><a href="about.html">Author</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/innocent-obasi-72ab6022a" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.facebook.com/obasi.chukwuma.77" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://wa.link/fjkcmd" target="_blank" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured" id="p1">
+								<header class="major">
+									<span class="date"> Smart calculator</span>
+									<h2 style="display: flex; text-transform: capitalize;"">Contents</h2>
+									<ul class="list">
+										<li class="list"><a href="#over"> overview</a></li>
+										<li class="list"><a href="#firs">legendre function of 1st kind</a></li>
+										<li class="list"><a href="#sec">legendre function of 2nd kind</a></li>
+									</ul>
+									
+									<p id="over">
+										<h2 style="text-transform:capitalize ;"> overview</h2>
+										<p style="margin-bottom: 0;">The Legendre equation arises in mathematical models of heat conduction in spherical geometries and expansion of electromagnetic potential. It is encountered in situations where one has to solve partial differential equations containing the Laplacian polar coordinates.This Calculator presents the simplest form of the Legendre function of the second kind, \(Q_n(x)\). Before now, it had been presented in form of a recursion formula. The Legendre equation can be written as:</p>
+										<div class="doc">\((1-x^2)y''-2xy'+n(n+1)y=0\)</div>
+										<div class="doc" style="display: flex;">\( where\ n=1,2,3,...\)</div>
+										<p style="margin-top: 3%; margin-bottom:0%;">
+											The general solution is given in the form of Legendre functions of the first and second kind (\(P_n(x)\) and \(Q_n(x)\)), it can be written as:
+										</p>
+										<div class="doc">\(y=C_1\ P_n(x)+ C_2\ Q_n(x)\)</div>
+										<p>\(P_n (x)\) and  \(Q_n (x)\) are the two fundamental solutions, and both of which converge for \(-1\lt x\lt1\).
+										</p>
+									</p>
+
+									<p id="firs">
+										<h2 style="text-transform:capitalize ;">Legendre function of the first kind (<span style="text-transform:none">\(P_n(x)\)</span>)</h2>
+										<p>
+											\(P_n (x)\) is also referred to as Legendre polynomials. 
+										</p>
+										<div class="doc">
+											\(P_n(x)=\frac {1} {2^n}\sum_{r=0}^\frac {n} {2} \frac {(-1)^r\ (2n-2r)!} {(n-r)!\ (n-2r)!\ r!}x^{n-2r}\)
+										</div>
+									</p>
+
+									<p id="sec">
+										<h2 style="text-transform:capitalize ;">Legendre function of the second kind (<span style="text-transform:none">\(Q_n(x)\)</span>)</h2>
+										<div class="doc">
+											\(Q_n(x)=[P_n(x)]\ tanh^{-1}(x) \ \ \ \ \ +\)
+										</div>
+										<div class="doc" style="display: flex;">
+											\(\frac {1} {2^n}\sum_{r=0}^\frac {n-1} {2} \ (-1)^{r+1}\)<span id="brac1">\(\sum_{k=0}^r \frac {(2n-2k)!\ (2k)!}{((n-k)!\ k!)^2}\)</span>\(\frac {(n-1-r)!\ r!}{(2r+1)!\ (n-1-2r)!}x^{n-1-2r}\)
+										</div>
+										<p>
+											The above equation (Obasi, 2022) is analogous to the recursion formula (Campbell, 2020) given by the French mathematician Pierre Ossian Bonnet, however, this equation which was developed by the author, will undoubtedly prove to be more direct; especially when trying to determine the solution to a Legendre equation with a high value of n. 
+										</p>
+									</p>
+								</header>
+
+									<button class="button icon solid fa-download" id="btn--select" ><a href="The Ideal Solution to the Legendre Equation and the Laplace Equation.pdf" download="">Download full publication</a></button>
+
+								<section style="margin: 3%; padding:3%; margin-left: 0;">
+									<h3 style="display: flex; text-transform: capitalize; margin-top: 5%;">References</h3>
+									<ol>
+										<li style="font-size: 1.2em;"> Obasi, I. C. (2022). The Ideal Solution to the Legendre Equation and Laplace Equation. (Undergoing review)</li>
+										<li style="font-size: 1.2em;">Campbell, J. (2020). New families of double hypergeometric series for constants involving 1/π^2 .  hal-02986446</li>
+									</ol>
+								</section>
+							</article>
+                    </div>
+			</div>
+			<div id="copyright" style="margin-bottom: 5%; color:antiquewhite; text-align: center;">
+				<ul><li>&copy; 2023</li><li>Designer: <a href="https://obasitheanalyst.github.io/portfolio/">Innocent Obasi</a></li></ul>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
